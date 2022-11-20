@@ -1,0 +1,1029 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+html{
+    font-size: 62.5%;
+}
+:root{
+    --font-black-color:black;
+    --font-white-color:white;
+    --font-grey-color:#929292;
+    --background-color-grey:#F6F6F6;
+}
+.container{
+    margin: auto;
+    /* width: 1140px; */
+}
+.padding-top{
+    padding-top: 9.6rem;
+}
+.padding-bottom{
+    padding-bottom: 9.6rem;
+}
+.padding-tb{
+    padding: 5rem  0rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* --- HEADER START --- */
+.header{
+    background-color: var(--background-color-grey);
+    height: 9.6rem;
+}
+.country li{
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+}
+.country i{
+    font-size: 0.825rem;
+    margin-left: 0.45rem;
+}
+.awesome-font-login i{
+    margin: 0rem 1.4rem;
+    font-size: 1.5rem;
+}
+
+/* --- HEADER END --- */
+
+/* --- NAVBAR START --- */
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+    background-color: white;
+}
+.navbar .main-nav  li{
+    padding: 1rem 2.6rem;
+}
+.navbar ul li a{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+}
+.home-drop-down {
+    position: absolute;
+    top: 5.5rem;
+    z-index: 9999;
+    right: 90rem;
+    width: 17rem;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    padding: 1.5rem 0;
+}
+.navbar ul li:hover .home-drop-down{
+    opacity: 1;
+    visibility: visible;
+}
+.home-drop-down li:hover{
+    color: red;
+}
+.men-megamenu{
+    width:100rem;
+    background-color: white;
+    position: absolute;
+    top: 5.5rem;
+    right: 25rem;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    padding: 1.5rem 0;
+}
+.navbar ul li:hover .men-megamenu{
+    opacity: 1;
+    visibility: visible;
+}
+.men-megamenu li:hover{
+    color: red;
+}
+.accessories-dropdown{
+    width:50rem;
+    background-color: white;
+    position: absolute;
+    top: 5.5rem;
+    right: 57rem;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    padding: 1.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.navbar ul li:hover .accessories-dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+.accessories-dropdown li:hover{
+    color: red;
+}
+.women-dropdown{
+    width:50rem;
+    background-color: white;
+    position: absolute;
+    top: 5.5rem;
+    right: 39rem;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    padding: 1.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.navbar ul li:hover .women-dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+.women-dropdown li:hover{
+    color: red;
+}
+.men-megamenu ul li:first-child,.accessories-dropdown ul li:first-child, .women-dropdown ul li:first-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.blog-drop-down {
+    position: absolute;
+    top: 5.5rem;
+    z-index: 9999;
+    right: 50rem;
+    width: 17rem;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    padding: 1.5rem 0;
+}
+.navbar ul li:hover .blog-drop-down{
+    opacity: 1;
+    visibility: visible;
+}
+.blog-drop-down li:hover{
+    color: red;
+}
+
+.page-drop-down {
+    position: absolute;
+    top: 5.5rem;
+    z-index: 9999;
+    right: 40rem;
+    width: 17rem;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    padding: 1.5rem 0;
+}
+.navbar ul li:hover .page-drop-down{
+    opacity: 1;
+    visibility: visible;
+}
+.page-drop-down li:hover{
+    color: red;
+}
+/* --- NAVBAR END --- */
+
+/* --- SECTION 1 START --- */
+.sec-1-bg-color {
+    background-color: var(--background-color-grey);
+}
+.section-1 .carousel-caption-1{
+    position: absolute;
+    right: 15%;
+    top: 13.2rem;
+    left: 15%;
+    padding-top: 1.85rem;
+    padding-bottom: 1.85rem;
+    color: black;
+    text-align: center;
+}
+.section-1 .carousel-caption-2 h5{
+    color: black;
+    font-size: 1.625rem;
+    word-spacing: 0.25rem;
+    font-weight: 600;
+}
+.section-1 .carousel-caption-1 h6{
+    color: black;
+    font-size: 2.3rem;
+    margin: 1.55rem  0;
+    letter-spacing: 2rem;
+}
+.section-1 .carousel-caption-1 p{
+    color: var(--font-black-color);
+    font-size: 1.2rem;
+    padding: 1.55rem 0;
+}
+.section-1 .carousel-caption-1 a{
+    color: black;
+    font-size: 1rem;
+    padding: 1rem  3.5rem;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+}
+.section-1 .carousel-caption-1 a:hover{
+    background-color: black;
+    color: var(--font-white-color);
+}
+.section-1 .carousel-caption-2{
+    position: absolute;
+    right: 15%;
+    top: 13.25rem;
+    right: 50%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #fff;
+}
+.section-1 .carousel-caption-2 h5{
+    color: black;
+    font-size: 4.8rem;
+    font-weight: 500;
+    text-align: start;
+}
+
+.section-1 .carousel-caption-2 p{
+    color: var(--font-black-color);
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    text-align: start;
+}
+.section-1 .carousel-caption-2 a{
+    color: black;
+    font-size: 1.2rem;
+    padding: 1.2rem  4rem;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+}
+.section-1 .carousel-caption-2 a:hover{
+    background-color: black;
+    color: var(--font-white-color);
+}
+/* --- SECTION 1 END --- */
+
+/* --- SECTION 2 START --- */
+.img-ovrflw{
+    overflow: hidden;
+}
+.section-2 img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+.sec-2-cntnt-1{
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left: 10%;
+}
+.sec-2-cntnt-1 h3{
+    font-size: 1.9rem;
+    margin-bottom: 2.4rem;
+}
+.sec-2-cntnt-1 h5{
+    font-size: 1.6rem;
+    color: var(--font-grey-color);
+    font-weight: 300;
+    transition:all 0.5s ease;
+}
+.sec-2-cntnt-1 h5:hover{
+    color: red;
+}
+/* --- SECTION 2 END --- */
+
+/* --- SECTION 3 START --- */
+.section-3 h5{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.section-3 p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--font-grey-color);
+}
+/* --- SECTION 3 END --- */
+
+/* --- SECTION 4 START --- */
+.section-4 h2{
+    font-size: 3.5rem;
+}
+.section-4 p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--font-grey-color);
+    padding: 1.5rem 0;
+}
+.section-4 a:first-child{
+    background-color: black;
+    color: white;
+}
+.section-4 a{
+    color: var(--font-grey-color);
+    font-size: 1.2rem;
+    background-color: var(--background-color-grey);
+    padding: 1.2rem  4rem;
+    border: none ;
+    transition: all 0.5s ease;
+    margin: 0rem 0.5rem;
+    border-radius: 5px;
+}
+.section-4 a:hover{
+    background-color: black;
+    color: var(--font-white-color);
+}
+/* --- SECTION 4 END --- */
+
+ /* --- SECTION 5 START --- */
+.section-5 .slider-1 .slider-1-cntnt {
+    padding: 1.5rem 0;
+}
+.section-5 .slider-1 .slider-1-cntnt .armani h6{
+    font-size: 1.3rem ;
+    color: var(--font-grey-color);
+    transition: all 0.5s ease;
+}
+.section-5 .slider-1 .slider-1-cntnt .armani h6:hover{
+    color: red;
+}
+.section-5 .slider-1 .slider-1-cntnt .f-star{
+    font-size: 1.3rem ;
+    color: orange;
+}
+.section-5 .slider-1 .slider-1-cntnt p{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: var(--font-black-color);
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.section-5 .slider-1 .slider-1-cntnt p:hover{
+    color: red;
+}
+.section-5 .slider-1 .slider-1-cntnt h5{
+    font-size: 1.7rem;
+    color: var(--font-grey-color);
+}
+.slider-1-inner-hover-item {
+    position: absolute;
+    bottom: 16rem;
+    left: -16rem;
+    transition: all 1s ease;
+}
+.slider-1-inner-hover-item i{
+    font-size: 2.5rem;
+    color: black;
+    padding: 0rem 1rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: white;
+    line-height: 5rem;
+}
+.slider-1 .item{
+    overflow: hidden;
+    padding: 0rem 1rem;
+}
+.owl-nav{
+    display: none;
+}
+.slider-1 .item:hover .slider-1-inner-hover-item{
+    left: 6rem;
+}
+.sale{
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.sale h6{
+    text-align: center;
+    line-height: 5rem;
+}
+ /* --- SECTION 5 END --- */
+
+/* --- SECTION 6 START --- */
+.sec-6-img-overflow{
+    overflow: hidden;
+}
+.section-6 img:hover{
+    transform: scale(1.13);
+    transition: all 0.5s ease;
+}
+.sec-6-cntnt-1{
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+.sec-6-cntnt-1 h6{
+    font-size: 1.5rem;
+}
+.sec-6-cntnt-1 h3{
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+.sec-6-cntnt-1 a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+}
+/* --- SECTION 6 END --- */
+
+/* --- SECTION 7 START --- */
+.sec-7-slider-1-cntnt h6{
+    font-size: 1.5rem;
+    color: var(--font-grey-color);
+}
+.sec-7-slider-1-cntnt .sec-7-star{
+    color: orange;
+}
+.section-7 .hundrad{
+    color: var(--font-grey-color);
+}
+.section-7 span{
+    color: red;
+    font-size: 1.5rem;
+}
+.section-7 .slider-2 .owl-nav{
+    display: none;
+}
+.section-7 .slider-2 .owl-dots{
+    display: none;
+}
+/* --- SECTION 7 END --- */
+
+/* --- SECTION 8 START --- */
+.section-8 h2{
+    font-size: 3rem;
+}
+.section-8 p{
+    color: var(--font-grey-color);
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+/* --- SECTION 8 END --- */
+
+/* --- SECTION 9 START --- */
+.sec-9-cntnt-1{
+    padding: 1.5rem 0rem;
+}
+.sec-9-cntnt-1 h4{
+    font-size: 1.7rem;
+    transition: all 0.5s ease;
+}
+.sec-9-cntnt-1 h4:hover{
+    color: red;
+}
+.sec-9-cntnt-1 p{
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    color: var(--font-grey-color);
+}
+.sec-9-cntnt-1 a{
+    font-size: 1.5rem;
+    color: var(--font-grey-color);
+    font-weight: 600;
+}
+.sec-9-cntnt-2{
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    height: 7rem;
+    width: 5rem;
+    background-color: white;
+}
+.sec-9-cntnt-2 h5{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem 0rem;
+    color: var(--font-grey-color);
+}
+.sec-9-cntnt-2 h6{
+    text-align: center;
+    font-size: 3rem;
+}
+.sec-9-hover:hover img{
+    filter: brightness(50%);
+    transition: all 1s ease;
+}
+/* --- SECTION 9 END --- */
+
+/* --- SECTION 10 START --- */
+.section-10 h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--font-grey-color);
+}
+.section-10 h1{
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+.section-10 p{
+    font-size: 1.6rem;
+    color: var(--font-grey-color);
+    margin-bottom: 5rem;
+}
+/* --- SECTION 10 END --- */
+
+/* --- SECTION 11 START --- */
+.section-11 p{
+    padding: 3rem 0;
+    font-size: 1.2rem;
+    color: var(--font-grey-color);
+}
+.section-11 h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem 0 !important;
+}
+.social-icon{
+    padding: 2rem 0;
+}
+.social-icon i{
+    color: var(--font-grey-color);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(87, 83, 83);
+    text-align: center;
+    line-height: 4rem;
+    margin: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-icon i:hover{
+    background-color: red;
+    color: white;
+}
+.sec-11-2-cntnt h4{
+    color: var(--font-grey-color);
+    font-size: 1.8rem;
+}
+.sec-11-2-cntnt li{
+    color:#707070;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    transition: all 0.5s ease;
+}
+.sec-11-2-cntnt li:hover{
+    color: red;
+}
+/* --- SECTION 11 END --- */
+
+/* --- SECTION 12 START --- */
+.section-12 p{
+    color: var(--font-grey-color);
+    font-size: 1.2rem;
+}
+.section-12 span{
+    color: red;
+}
+.section-12 li{
+    color: var(--background-color-grey);
+    padding: 0rem 2rem;
+    font-size: 1.1rem;
+}
+/* --- SECTION 12 END --- */
+
+/* --- BLOG SECTION START --- */
+
+/* ---BLOG SECTION 1 START --- */
+.blog-sec-1-cntnt{
+    position: absolute;
+    top: 25%;
+    right: 50%;
+}
+.blog-sec-1-cntnt h4{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.blog-sec-1-cntnt h5{
+    color: var(--font-grey-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.blog-sec-1-cntnt span{
+    color: red;
+}
+/* ---BLOG SECTION 1 END --- */
+
+/* --- BLOG SECTION 2 START --- */
+.blog-sec-2-img-hover-item{
+    position: absolute;
+    top: 80%;
+    left: -15rem;
+    transition: all 1s ease;
+}
+.blog-sec-2-img-hover-item i{
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.5rem;
+}
+.blog-sec-2-img-hover:hover .blog-sec-2-img-hover-item{
+    left:4.5rem;
+}
+.bolg-sec-2-mdl-cntnt h6{
+    font-size: 1.3rem;
+    color: var(--font-grey-color);
+}
+.bol-sec-1-star i{
+    color: orange;
+}
+.bolg-sec-2-mdl-cntnt h5{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+.bolg-sec-2-mdl-cntnt h5:hover{
+    color: red;
+}
+.bolg-sec-2-mdl-cntnt h4{
+    color: var(--font-grey-color);
+    margin-bottom: 3rem;
+}
+.bolg-sec-2-mdl-cntnt p{
+    padding: 3rem 0;
+    font-size: 1.3rem;
+    color: var(--font-grey-color);
+}
+.blog-sec-2-cntnt-right ul  li:first-child{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+.blog-sec-2-cntnt-right ul li{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s ease;
+}
+.blog-sec-2-cntnt-right ul li:hover{
+    color: red;
+}
+/* --- BLOG SECTION 2 END --- */
+
+
+/* --- BLOG SECTION  END --- */
+
+
+/* --- MEN SECTION START --- */
+
+/* --- MEN SECTION 2 START --- */
+.men-sec-2-left-cntnt{
+    padding: 2rem 1.5rem;
+}
+.men-sec-2-left-cntnt h5{
+    font-size: 1.5rem;
+    color: var(--font-grey-color);
+}
+.men-sec-2-left-cntnt .aypi{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    transition: all 0.5s ease;
+}
+.men-sec-2-left-cntnt .aypi:hover{
+    color: red;
+}
+.men-sec-2-left-cntnt p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    padding: 1rem 0 1.5rem 0;
+    color: var(--font-grey-color);
+    font-weight: 300;
+}
+.men-sec-2-left-cntnt a{
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.men-sec-2-left-cntnt hr{
+    width: 90%;
+}
+.men-sec-2-user li{
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+}
+.men-sec-2-user span{
+    padding: 0rem 1rem;
+}
+.men-sec-2-user li:hover{
+    color: red;
+}
+.men-sec-2-right-h5{
+    color: var(--font-black-color);
+    font-weight: 600;
+    padding: 3rem 0 1rem 0;
+    font-size: 1.7rem;
+}
+.men-sec-2-right h4{
+    font-size: 1.7rem;
+    color: rgb(72, 68, 68);
+    font-weight: 300;
+    transition: all 0.5s ease;
+}
+.men-sec-2-right h4:hover{
+    color: red;
+}
+/* --- MEN SECTION 2 END --- */
+
+/* --- MEN SECTION 3 START --- */
+.men-sec-3-right li{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--font-grey-color);
+    transition: all 0.5s ease;
+}
+.men-sec-3-right li:hover{
+    color: red;
+}
+.men-sec-3-button a{
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    background-color: var(--font-grey-color);
+    color: var(--font-black-color);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+}
+.men-sec-3-button a:hover{
+    color: white;
+    background-color: red;
+}
+/* --- MEN SECTION 2 END --- */
+
+/* --- MEN SECTION END --- */
+
+/* --- ACCES SECTION START --- */
+
+/* --- ACCES SEC 2 START --- */
+.acces-sec-2-right-cntnt h6{
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.acces-sec-2-right-cntnt .Write-review{
+    padding: 1.5rem 0;
+    color: var(--font-grey-color);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.acces-sec-2-right-cntnt span{
+    color: orange;
+}
+.acces-sec-2-right-cntnt .prise{
+    color: var(--font-grey-color);
+    font-weight: 500;
+    padding: 1rem 0;
+}
+.acces-sec-2-right-cntnt p{
+    color: var(--font-grey-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.acces-sec-2-right-cntnt .tax{
+    font-size: 1.5rem;
+    color: var(--font-grey-color);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.acces-sec-2-right-cntnt .reward{
+    font-size: 1.5rem;
+    color: var(--font-grey-color);
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.acces-sec-2-right-cntnt .brand, .product, .point, .avalibility{
+    font-size: 1.5rem;
+    color: var(--font-grey-color);
+    padding: 1rem 0;
+} 
+.available-clr h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.acces-sec-2-number{
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: 1px solid var(--font-grey-color);
+}
+.acces-sec-2-right-cntnt .cart-button{
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--font-grey-color);
+    margin: 0 1rem;
+    transition: all 0.5s ease;
+}
+.acces-sec-2-right-cntnt .cart-button:hover{
+    color: white;
+    background-color: red;
+    border: none;
+    border: 1px solid white;
+}
+/* --- ACCES SEC 2 END --- */
+
+/* --- ACCES SECITION 3 START --- */
+.acces-sec-4 a:first-child{
+    background-color: black;
+    color: white;
+}
+.acces-sec-4 a{
+    color: var(--font-grey-color);
+    font-size: 1.2rem;
+    background-color: var(--background-color-grey);
+    padding: 1.2rem  4rem;
+    border: none ;
+    transition: all 0.5s ease;
+    margin: 0rem 0.5rem;
+    border-radius: 5px;
+}
+.acces-sec-4 a:hover{
+    background-color: black;
+    color: var(--font-white-color);
+}
+.acces-sec-4 p{
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    color: var(--font-grey-color);
+}
+/* --- ACCES SECITION 3 END --- */
+
+/* --- ACCES SECTION 5 START --- */
+.acces-sec-5 h2{
+    font-size: 3.5rem;
+}
+.acces-sec-5 p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--font-grey-color);
+    padding: 1.5rem 0;
+}
+/* --- ACCES SECTION 5 END --- */
+
+/* --- ACCES SECTION END --- */
+
+/* --- WOMEN SECTION START --- */
+
+/* --- WOMEN SEC-2 START --- */
+.women-sec-2-left img:hover{
+    transform: scale(1.3);
+    transition: all 0.5s ease-in-out;
+}
+.women-sec-2-right h1{
+    font-size: 2.5rem;
+}
+.women-sec-2-right p{
+    padding: 1.5rem 0;
+    font-size: 1.7rem;
+}
+.women-sec-2-right li{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: var(--font-grey-color);
+    transition: all 0.2s ease;
+}
+.women-sec-2-right li:hover{
+    color: red;
+}
+.women-sec-2-right i{
+    color: orange;
+    padding: 0rem 1rem;
+}
+/* --- WOMEN SEC-2 END --- */
+
+/* --- WOMEN SECTION 3 START --- */
+.women-sec-3 h1{
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+}
+.women-sec-3 p{
+    color: var(--font-grey-color);
+    font-size: 1.5rem;
+}
+/* --- WOMEN SECTION 3 END --- */
+
+/* --- WOMEN SECTION 4 START --- */
+.count {
+    color: black;
+    font-weight: bold;
+    font-family: verdana;
+}
+.women-sec-4-bg-img{
+    background-image: url("https://htmldemo.net/mimosa/mimosa/img/banner/42.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.women-sec-4-cntnt{
+    padding: 2.5rem 0;
+}
+.women-sec-4-cntnt h5{
+    font-size: 2.5rem;
+}
+.women-sec-4-cntnt p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--font-grey-color);
+}
+/* --- WOMEN SECTION 4 END --- */
+
+/* --- WOMEN SECTION 5 START --- */
+.women-sec-5 h4{
+    font-size: 1.8rem;
+}
+.women-sec-5 h5{
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--font-grey-color);
+}
+.women-sec-5-img-hover{
+    position: relative;
+}
+.women-sec-5-absolute::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #a08d7c;
+    top: 0%;
+    right: 0%;
+    transform: scale(0);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.women-sec-5-img-hover:hover .women-sec-5-absolute::after{
+    transform: scale(1);
+    opacity: 0.4;
+}
+.i-tag-hover{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    transition-delay: 0.05s;
+}
+.i-tag-hover i{
+    font-size: 2rem;
+    margin: 0rem 1rem;
+    color: white;
+}
+.women-sec-5-img-hover:hover .i-tag-hover{
+    opacity: 1;
+    top: 50%;
+    visibility: visible;
+}
+/* --- WOMEN SECTION 5 END --- */
+
+/* --- WOMEN SECTION 6 START --- */
+.women-sec-6-left-cntnt h1{
+    font-size: 3rem;
+}
+.women-sec-6-left-cntnt p{
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--font-grey-color);
+}
+.women-sec-6-left-cntnt a{
+    font-size: 1.5rem;
+    color: var(--font-grey-color);
+    transition: all 0.2s ease;
+}
+.women-sec-6-left-cntnt i{
+    margin-left: 1rem;
+}
+.women-sec-6-left-cntnt a:hover{
+    color: red;
+}
+/* --- WOMEN SECTION 6 END --- */
+
+/* --- WOMEN SECTION END --- */
+
+/* --- ERROR SECTION START --- */
+.error-section h1{
+    font-size: 15rem;
+}
+.error-section h3{
+    font-size: 7rem;
+}
+/* --- ERROR SECTION END --- */

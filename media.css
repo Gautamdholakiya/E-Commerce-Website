@@ -1,0 +1,60 @@
+/* --- XSM SCREEN --- */
+@media (max-width: 575px) {
+    html{
+        font-size:45% ;
+    }
+}
+
+/* --- SM SCREEN --- */
+@media (min-width: 576px)  and (max-width:767px){
+    html{
+        font-size:48% ;
+    }
+}
+
+/* --- MD SCREEN --- */
+@media (min-width: 768px)  and (max-width:991px){
+    html{
+        font-size:55% ;
+    }
+}
+
+/* --- LG SCREEN --- */
+@media (min-width: 992px)  and (max-width:1199px){
+    html{
+        font-size:58% ;
+    }
+}
+
+/* --- XL SCREEN --- */
+@media (min-width: 1200px)  and (max-width:1399px){
+}
+
+/* --- XXL SCREEN --- */
+@media (min-width: 1400px){
+
+}
+
+/* --- TOGGLE MENU J-QUERY CSS --- */
+
+@media (max-width: 768px) {
+
+    /* --- HEADER START --- */
+    .navbar ul{
+        top: 6rem;
+        right: -100%;
+        position: fixed;
+        z-index: 999;
+        background-color: black;
+        padding: 0.5rem 1rem;
+        transition: all 1s ease;
+        display: none;
+    }
+    .navbar ul li a{
+        color: white;
+    }
+    .show ul{
+        right: 0;
+    }
+    /* --- HEADER END --- */
+}
