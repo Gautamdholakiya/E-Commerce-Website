@@ -36,9 +36,9 @@ function CartItem({ cart }) {
           </div>
           <p className="total-price">Subtotal: {cart.quantity * cart.price}</p>
         </div>
-        <div className="item-remove">
+        {/* <div className="item-remove">
           <AiOutlineClose />
-        </div>
+        </div> */}
       </div>
     </div>
   );
